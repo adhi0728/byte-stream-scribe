@@ -60,10 +60,8 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin")}
                   >
                     <Link to="/admin">
-                      <div className="flex items-center gap-2">
-                        <Home className="h-4 w-4" />
-                        <span>Dashboard</span>
-                      </div>
+                      <Home className="h-4 w-4" />
+                      <span>Dashboard</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -73,10 +71,8 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin/posts")}
                   >
                     <Link to="/admin/posts">
-                      <div className="flex items-center gap-2">
-                        <FileText className="h-4 w-4" />
-                        <span>Posts</span>
-                      </div>
+                      <Home className="h-4 w-4" />
+                      <span>Posts</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -86,10 +82,8 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin/users")}
                   >
                     <Link to="/admin/users">
-                      <div className="flex items-center gap-2">
-                        <User className="h-4 w-4" />
-                        <span>Users</span>
-                      </div>
+                      <User className="h-4 w-4" />
+                      <span>Users</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -99,10 +93,8 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin/settings")}
                   >
                     <Link to="/admin/settings">
-                      <div className="flex items-center gap-2">
-                        <Settings className="h-4 w-4" />
-                        <span>Settings</span>
-                      </div>
+                      <Settings className="h-4 w-4" />
+                      <span>Settings</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -113,15 +105,13 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" className="w-full justify-start px-2">
-                      <div className="flex items-center">
-                        <Avatar className="h-6 w-6 mr-2">
-                          <AvatarImage src="https://i.pravatar.cc/150?img=11" />
-                          <AvatarFallback>AD</AvatarFallback>
-                        </Avatar>
-                        {!collapsed && (
-                          <span className="text-sm font-medium">Admin User</span>
-                        )}
-                      </div>
+                      <Avatar className="h-6 w-6 mr-2">
+                        <AvatarImage src="https://i.pravatar.cc/150?img=11" />
+                        <AvatarFallback>AD</AvatarFallback>
+                      </Avatar>
+                      {!collapsed && (
+                        <span className="text-sm font-medium">Admin User</span>
+                      )}
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-56">
@@ -143,7 +133,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
           <div className="flex flex-col flex-1 overflow-hidden">
             <header className="h-16 flex items-center gap-4 border-b px-6">
               <SidebarTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
+                <Button variant="ghost" size="icon">
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Toggle Sidebar</span>
                 </Button>
