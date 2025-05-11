@@ -140,7 +140,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
               </SidebarTrigger>
               <div className="flex-1" />
               <ThemeToggle />
-              <Button variant="ghost" asChild>
+              <Button asChild variant="ghost">
                 <Link to="/">View Blog</Link>
               </Button>
             </header>
