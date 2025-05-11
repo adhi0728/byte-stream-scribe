@@ -71,7 +71,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin/posts")}
                   >
                     <Link to="/admin/posts">
-                      <Home className="h-4 w-4" />
+                      <FileText className="h-4 w-4" />
                       <span>Posts</span>
                     </Link>
                   </SidebarMenuButton>

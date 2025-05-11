@@ -14,7 +14,7 @@ const DashboardHeader = () => {
       </div>
       <Button asChild>
         <Link to="/admin/posts/new">
-          <Plus className="mr-2 h-4 w-4" /> 
+          <Plus className="mr-2 h-4 w-4" />
           <span>New Post</span>
         </Link>
       </Button>
