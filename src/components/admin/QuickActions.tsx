@@ -35,7 +35,7 @@ const QuickActions = () => {
         <Button asChild variant="outline" className="w-full justify-start">
           <Link to="/admin/settings">
             <Settings className="mr-2 h-4 w-4" />
-            <span>Blog settings</span>
+            <span>Site settings</span>
           </Link>
         </Button>
       </CardContent>
