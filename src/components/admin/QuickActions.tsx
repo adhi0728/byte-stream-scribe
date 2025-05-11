@@ -16,26 +16,34 @@ const QuickActions = () => {
       <CardContent className="space-y-2">
         <Button asChild className="w-full justify-start">
           <Link to="/admin/posts/new">
-            <Plus className="mr-2 h-4 w-4" />
-            <span>Create new post</span>
+            <div className="flex items-center">
+              <Plus className="mr-2 h-4 w-4" />
+              <span>Create new post</span>
+            </div>
           </Link>
         </Button>
         <Button asChild variant="outline" className="w-full justify-start">
           <Link to="/admin/users">
-            <User className="mr-2 h-4 w-4" />
-            <span>Manage users</span>
+            <div className="flex items-center">
+              <User className="mr-2 h-4 w-4" />
+              <span>Manage users</span>
+            </div>
           </Link>
         </Button>
         <Button asChild variant="outline" className="w-full justify-start">
           <Link to="/admin/posts">
-            <FileText className="mr-2 h-4 w-4" />
-            <span>View all posts</span>
+            <div className="flex items-center">
+              <FileText className="mr-2 h-4 w-4" />
+              <span>View all posts</span>
+            </div>
           </Link>
         </Button>
         <Button asChild variant="outline" className="w-full justify-start">
           <Link to="/admin/settings">
-            <Settings className="mr-2 h-4 w-4" />
-            <span>Site settings</span>
+            <div className="flex items-center">
+              <Settings className="mr-2 h-4 w-4" />
+              <span>Site settings</span>
+            </div>
           </Link>
         </Button>
       </CardContent>

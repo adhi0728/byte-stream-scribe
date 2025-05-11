@@ -60,8 +60,10 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin")}
                   >
                     <Link to="/admin">
-                      <Home className="h-4 w-4" />
-                      <span>Dashboard</span>
+                      <div className="flex items-center gap-2">
+                        <Home className="h-4 w-4" />
+                        <span>Dashboard</span>
+                      </div>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -71,8 +73,10 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin/posts")}
                   >
                     <Link to="/admin/posts">
-                      <FileText className="h-4 w-4" />
-                      <span>Posts</span>
+                      <div className="flex items-center gap-2">
+                        <FileText className="h-4 w-4" />
+                        <span>Posts</span>
+                      </div>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -82,8 +86,10 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin/users")}
                   >
                     <Link to="/admin/users">
-                      <User className="h-4 w-4" />
-                      <span>Users</span>
+                      <div className="flex items-center gap-2">
+                        <User className="h-4 w-4" />
+                        <span>Users</span>
+                      </div>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -93,8 +99,10 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     isActive={isActivePath("/admin/settings")}
                   >
                     <Link to="/admin/settings">
-                      <Settings className="h-4 w-4" />
-                      <span>Settings</span>
+                      <div className="flex items-center gap-2">
+                        <Settings className="h-4 w-4" />
+                        <span>Settings</span>
+                      </div>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -143,7 +151,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
               <div className="flex-1" />
               <ThemeToggle />
               <Button asChild variant="ghost">
-                <Link to="/">View Blog</Link>
+                <Link to="/">
+                  <div>View Blog</div>
+                </Link>
               </Button>
             </header>
             <main className="flex-1 overflow-auto">
