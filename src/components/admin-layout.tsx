@@ -105,22 +105,30 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" className="w-full justify-start px-2">
-                      <Avatar className="h-6 w-6 mr-2">
-                        <AvatarImage src="https://i.pravatar.cc/150?img=11" />
-                        <AvatarFallback>AD</AvatarFallback>
-                      </Avatar>
-                      {!collapsed && "Admin User"}
+                      <div className="flex items-center">
+                        <Avatar className="h-6 w-6 mr-2">
+                          <AvatarImage src="https://i.pravatar.cc/150?img=11" />
+                          <AvatarFallback>AD</AvatarFallback>
+                        </Avatar>
+                        {!collapsed && "Admin User"}
+                      </div>
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-56">
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Profile</DropdownMenuItem>
-                    <DropdownMenuItem>Settings</DropdownMenuItem>
+                    <DropdownMenuItem>
+                      Profile
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      Settings
+                    </DropdownMenuItem>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem>
-                      <LogOut className="mr-2 h-4 w-4" />
-                      Log out
+                      <div className="flex items-center w-full">
+                        <LogOut className="mr-2 h-4 w-4" />
+                        Log out
+                      </div>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
