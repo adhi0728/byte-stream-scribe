@@ -12,12 +12,12 @@ const DashboardHeader = () => {
           Welcome to your blog administration dashboard.
         </p>
       </div>
-      <Link to="/admin/posts/new">
-        <Button className="flex items-center">
+      <Button asChild>
+        <Link to="/admin/posts/new" className="flex items-center">
           <Plus className="mr-2 h-4 w-4" /> 
           <span>New Post</span>
-        </Button>
-      </Link>
+        </Link>
+      </Button>
     </div>
   );
 };
