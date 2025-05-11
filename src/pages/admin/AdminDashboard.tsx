@@ -53,11 +53,15 @@ const data = [
 ];
 
 const AdminDashboard = () => {
+  console.log("Rendering AdminDashboard");
   const { posts, users } = useBlog();
   
   const recentPosts = [...posts]
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, 5);
+
+  console.log("AdminDashboard - posts:", posts.length);
+  console.log("AdminDashboard - users:", users.length);
 
   return (
     <AdminLayout>
