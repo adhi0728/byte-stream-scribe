@@ -105,15 +105,11 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" className="w-full justify-start px-2">
-                      <div className="flex items-center">
-                        <Avatar className="h-6 w-6 mr-2">
-                          <AvatarImage src="https://i.pravatar.cc/150?img=11" />
-                          <AvatarFallback>AD</AvatarFallback>
-                        </Avatar>
-                        {!collapsed && (
-                          <span className="text-sm font-medium">Admin User</span>
-                        )}
-                      </div>
+                      <Avatar className="h-6 w-6 mr-2">
+                        <AvatarImage src="https://i.pravatar.cc/150?img=11" />
+                        <AvatarFallback>AD</AvatarFallback>
+                      </Avatar>
+                      {!collapsed && "Admin User"}
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-56">
@@ -124,7 +120,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     <DropdownMenuSeparator />
                     <DropdownMenuItem>
                       <LogOut className="mr-2 h-4 w-4" />
-                      <span>Log out</span>
+                      Log out
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
