@@ -38,7 +38,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
 
   return (
     <ThemeProvider defaultTheme="light">
-      <SidebarProvider collapsed={collapsed} onCollapsedChange={setCollapsed}>
+      <SidebarProvider defaultOpen={!collapsed} onOpenChange={setCollapsed}>
         <div className="min-h-screen flex w-full">
           <Sidebar className="border-r">
             <SidebarHeader className="h-16 flex items-center px-6">
