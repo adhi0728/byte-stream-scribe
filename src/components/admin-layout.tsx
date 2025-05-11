@@ -59,7 +59,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin")}
                   >
-                    <Link to="/admin" className="flex items-center gap-2">
+                    <Link to="/admin">
                       <Home className="h-4 w-4" />
                       <span>Dashboard</span>
                     </Link>
@@ -70,7 +70,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin/posts")}
                   >
-                    <Link to="/admin/posts" className="flex items-center gap-2">
+                    <Link to="/admin/posts">
                       <FileText className="h-4 w-4" />
                       <span>Posts</span>
                     </Link>
@@ -81,7 +81,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin/users")}
                   >
-                    <Link to="/admin/users" className="flex items-center gap-2">
+                    <Link to="/admin/users">
                       <User className="h-4 w-4" />
                       <span>Users</span>
                     </Link>
@@ -92,7 +92,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin/settings")}
                   >
-                    <Link to="/admin/settings" className="flex items-center gap-2">
+                    <Link to="/admin/settings">
                       <Settings className="h-4 w-4" />
                       <span>Settings</span>
                     </Link>
@@ -142,7 +142,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
               <div className="flex-1" />
               <ThemeToggle />
               <Button asChild variant="ghost">
-                <Link to="/" className="flex items-center">
+                <Link to="/">
                   View Blog
                 </Link>
               </Button>
