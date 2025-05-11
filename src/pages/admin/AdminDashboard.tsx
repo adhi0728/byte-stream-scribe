@@ -70,6 +70,7 @@ const AdminDashboard = () => {
 
   console.log("AdminDashboard - posts:", posts.length);
   console.log("AdminDashboard - users:", users.length);
+  console.log("AdminDashboard - recentPosts:", recentPosts.length);
 
   return (
     <AdminLayout>
@@ -83,8 +84,10 @@ const AdminDashboard = () => {
           </div>
           <Button asChild>
             <Link to="/admin/posts/new">
-              <Plus className="mr-2 h-4 w-4" /> 
-              New Post
+              <div className="flex items-center">
+                <Plus className="mr-2 h-4 w-4" /> 
+                <span>New Post</span>
+              </div>
             </Link>
           </Button>
         </div>
@@ -275,7 +278,7 @@ const AdminDashboard = () => {
                 <Link to="/admin/posts/new">
                   <div className="flex items-center">
                     <Plus className="mr-2 h-4 w-4" />
-                    Create new post
+                    <span>Create new post</span>
                   </div>
                 </Link>
               </Button>
@@ -283,7 +286,7 @@ const AdminDashboard = () => {
                 <Link to="/admin/users">
                   <div className="flex items-center">
                     <UserIcon className="mr-2 h-4 w-4" />
-                    Manage users
+                    <span>Manage users</span>
                   </div>
                 </Link>
               </Button>
@@ -291,7 +294,7 @@ const AdminDashboard = () => {
                 <Link to="/admin/posts">
                   <div className="flex items-center">
                     <FileTextIcon className="mr-2 h-4 w-4" />
-                    View all posts
+                    <span>View all posts</span>
                   </div>
                 </Link>
               </Button>
@@ -299,7 +302,7 @@ const AdminDashboard = () => {
                 <Link to="/admin/settings">
                   <div className="flex items-center">
                     <SettingsIcon className="mr-2 h-4 w-4" />
-                    Blog settings
+                    <span>Blog settings</span>
                   </div>
                 </Link>
               </Button>
