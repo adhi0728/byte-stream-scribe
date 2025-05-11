@@ -38,7 +38,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
 
   return (
     <ThemeProvider defaultTheme="light">
-      <SidebarProvider defaultCollapsed={false} onCollapsedChange={setCollapsed}>
+      <SidebarProvider collapsed={collapsed} onCollapsedChange={setCollapsed}>
         <div className="min-h-screen flex w-full">
           <Sidebar className="border-r">
             <SidebarHeader className="h-16 flex items-center px-6">
@@ -57,7 +57,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <SidebarMenuItem>
                   <SidebarMenuButton
                     asChild
-                    active={isActivePath("/admin")}
+                    isActive={isActivePath("/admin")}
                   >
                     <Link to="/admin">
                       <Home className="h-4 w-4" />
@@ -68,7 +68,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <SidebarMenuItem>
                   <SidebarMenuButton
                     asChild
-                    active={isActivePath("/admin/posts")}
+                    isActive={isActivePath("/admin/posts")}
                   >
                     <Link to="/admin/posts">
                       <FileText className="h-4 w-4" />
@@ -79,7 +79,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <SidebarMenuItem>
                   <SidebarMenuButton
                     asChild
-                    active={isActivePath("/admin/users")}
+                    isActive={isActivePath("/admin/users")}
                   >
                     <Link to="/admin/users">
                       <User className="h-4 w-4" />
@@ -90,7 +90,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <SidebarMenuItem>
                   <SidebarMenuButton
                     asChild
-                    active={isActivePath("/admin/settings")}
+                    isActive={isActivePath("/admin/settings")}
                   >
                     <Link to="/admin/settings">
                       <Settings className="h-4 w-4" />

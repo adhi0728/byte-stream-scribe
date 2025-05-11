@@ -1,9 +1,8 @@
-
 import { AdminLayout } from "@/components/admin-layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useBlog } from "@/contexts/blog-context";
-import { Plus } from "lucide-react";
+import { Plus, FileText, User, Eye, MessageSquare, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import {
