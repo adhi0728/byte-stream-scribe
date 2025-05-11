@@ -105,13 +105,15 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" className="w-full justify-start px-2">
-                      <Avatar className="h-6 w-6 mr-2">
-                        <AvatarImage src="https://i.pravatar.cc/150?img=11" />
-                        <AvatarFallback>AD</AvatarFallback>
-                      </Avatar>
-                      {!collapsed && (
-                        <span className="text-sm font-medium">Admin User</span>
-                      )}
+                      <div className="flex items-center">
+                        <Avatar className="h-6 w-6 mr-2">
+                          <AvatarImage src="https://i.pravatar.cc/150?img=11" />
+                          <AvatarFallback>AD</AvatarFallback>
+                        </Avatar>
+                        {!collapsed && (
+                          <span className="text-sm font-medium">Admin User</span>
+                        )}
+                      </div>
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-56">
@@ -135,7 +137,6 @@ export function AdminLayout({ children }: AdminLayoutProps) {
               <SidebarTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
                   <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle menu</span>
                 </Button>
               </SidebarTrigger>
               <div className="flex-1" />

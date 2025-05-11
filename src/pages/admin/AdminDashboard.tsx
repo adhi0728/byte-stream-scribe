@@ -1,8 +1,16 @@
+
 import { AdminLayout } from "@/components/admin-layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useBlog } from "@/contexts/blog-context";
-import { Plus, FileText as FileTextIcon, User as UserIcon, Eye as EyeIcon, MessageSquare as MessageSquareIcon, Settings as SettingsIcon } from "lucide-react";
+import { 
+  Plus, 
+  FileText as FileTextIcon, 
+  User as UserIcon, 
+  Eye as EyeIcon, 
+  MessageSquare as MessageSquareIcon, 
+  Settings as SettingsIcon 
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 import {
@@ -75,7 +83,8 @@ const AdminDashboard = () => {
           </div>
           <Button asChild>
             <Link to="/admin/posts/new">
-              <Plus className="mr-2 h-4 w-4" /> New Post
+              <Plus className="mr-2 h-4 w-4" /> 
+              New Post
             </Link>
           </Button>
         </div>
@@ -264,26 +273,34 @@ const AdminDashboard = () => {
             <CardContent className="space-y-2">
               <Button asChild className="w-full justify-start">
                 <Link to="/admin/posts/new">
-                  <Plus className="mr-2 h-4 w-4" />
-                  Create new post
+                  <div className="flex items-center">
+                    <Plus className="mr-2 h-4 w-4" />
+                    Create new post
+                  </div>
                 </Link>
               </Button>
               <Button variant="outline" asChild className="w-full justify-start">
                 <Link to="/admin/users">
-                  <UserIcon className="mr-2 h-4 w-4" />
-                  Manage users
+                  <div className="flex items-center">
+                    <UserIcon className="mr-2 h-4 w-4" />
+                    Manage users
+                  </div>
                 </Link>
               </Button>
               <Button variant="outline" asChild className="w-full justify-start">
                 <Link to="/admin/posts">
-                  <FileTextIcon className="mr-2 h-4 w-4" />
-                  View all posts
+                  <div className="flex items-center">
+                    <FileTextIcon className="mr-2 h-4 w-4" />
+                    View all posts
+                  </div>
                 </Link>
               </Button>
               <Button variant="outline" asChild className="w-full justify-start">
                 <Link to="/admin/settings">
-                  <SettingsIcon className="mr-2 h-4 w-4" />
-                  Blog settings
+                  <div className="flex items-center">
+                    <SettingsIcon className="mr-2 h-4 w-4" />
+                    Blog settings
+                  </div>
                 </Link>
               </Button>
             </CardContent>
