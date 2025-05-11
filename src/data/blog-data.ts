@@ -1,3 +1,4 @@
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -1180,3 +1181,71 @@ Images often account for most of the downloaded bytes on a webpage.
   <img src="image.jpg" alt="Image description">
 </picture>
 \`\`\`
+    `,
+    coverImage: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    category: "Performance",
+    tags: ["Web Performance", "Frontend", "Optimization", "Speed"],
+    author: {
+      id: "5",
+      name: "Jason Lee",
+      avatar: "https://i.pravatar.cc/150?img=15",
+      bio: "Performance engineer focused on making the web faster for everyone. Previously worked at Google and Cloudflare."
+    },
+    publishedAt: "Jan 10, 2023",
+    readTime: "10 min",
+    featured: false
+  }
+];
+
+export const sampleUsers = [
+  {
+    id: "1",
+    name: "Alex Johnson",
+    email: "alex@example.com",
+    avatar: "https://i.pravatar.cc/150?img=11",
+    bio: "Senior React Developer with 8 years of experience. Passionate about clean code and user experience.",
+    role: "author",
+    articles: 12,
+    joinedAt: "2021-03-15"
+  },
+  {
+    id: "2",
+    name: "Sarah Williams",
+    email: "sarah@example.com",
+    avatar: "https://i.pravatar.cc/150?img=20",
+    bio: "Backend Engineer specializing in Node.js and microservices architecture.",
+    role: "author",
+    articles: 8,
+    joinedAt: "2022-01-10"
+  },
+  {
+    id: "3",
+    name: "Michael Chen",
+    email: "michael@example.com",
+    avatar: "https://i.pravatar.cc/150?img=12",
+    bio: "Frontend Developer and UI Designer with a passion for creating beautiful, responsive web experiences.",
+    role: "author",
+    articles: 15,
+    joinedAt: "2021-05-22"
+  },
+  {
+    id: "4",
+    name: "Emily Rodriguez",
+    email: "emily@example.com",
+    avatar: "https://i.pravatar.cc/150?img=23",
+    bio: "Full-stack developer specializing in TypeScript and React. Conference speaker and technical writer.",
+    role: "admin",
+    articles: 10,
+    joinedAt: "2021-02-14"
+  },
+  {
+    id: "5",
+    name: "Jason Lee",
+    email: "jason@example.com",
+    avatar: "https://i.pravatar.cc/150?img=15",
+    bio: "Performance engineer focused on making the web faster for everyone. Previously worked at Google and Cloudflare.",
+    role: "author",
+    articles: 6,
+    joinedAt: "2022-04-30"
+  }
+];
