@@ -61,7 +61,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                   >
                     <Link to="/admin">
                       <Home className="h-4 w-4" />
-                      <span>Dashboard</span>
+                      Dashboard
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -72,7 +72,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                   >
                     <Link to="/admin/posts">
                       <FileText className="h-4 w-4" />
-                      <span>Posts</span>
+                      Posts
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -83,7 +83,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                   >
                     <Link to="/admin/users">
                       <User className="h-4 w-4" />
-                      <span>Users</span>
+                      Users
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -94,7 +94,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                   >
                     <Link to="/admin/settings">
                       <Settings className="h-4 w-4" />
-                      <span>Settings</span>
+                      Settings
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>

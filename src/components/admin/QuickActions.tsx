@@ -17,25 +17,25 @@ const QuickActions = () => {
         <Button asChild className="w-full justify-start">
           <Link to="/admin/posts/new">
             <Plus className="mr-2 h-4 w-4" />
-            <span>Create new post</span>
+            Create new post
           </Link>
         </Button>
         <Button asChild variant="outline" className="w-full justify-start">
           <Link to="/admin/users">
             <User className="mr-2 h-4 w-4" />
-            <span>Manage users</span>
+            Manage users
           </Link>
         </Button>
         <Button asChild variant="outline" className="w-full justify-start">
           <Link to="/admin/posts">
             <FileText className="mr-2 h-4 w-4" />
-            <span>View all posts</span>
+            View all posts
           </Link>
         </Button>
         <Button asChild variant="outline" className="w-full justify-start">
           <Link to="/admin/settings">
             <Settings className="mr-2 h-4 w-4" />
-            <span>Site settings</span>
+            Site settings
           </Link>
         </Button>
       </CardContent>
