@@ -8,12 +8,18 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   content: string;
-  author: string;
+  author: {
+    id: string;
+    name: string;
+    avatar: string;
+    bio: string;
+  };
   publishedAt: string;
   category: string;
   tags: string[];
   coverImage: string;
   featured: boolean;
+  readTime: string;
 }
 
 interface BlogContextType {

@@ -12,7 +12,6 @@ const DashboardHeader = () => {
           Welcome to your blog administration dashboard.
         </p>
       </div>
-      {/* Fix: Wrap the Link in a div and make Button a child of Link */}
       <Link to="/admin/posts/new">
         <Button className="flex items-center">
           <Plus className="mr-2 h-4 w-4" /> 
