@@ -2,7 +2,7 @@ import { AdminLayout } from "@/components/admin-layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useBlog } from "@/contexts/blog-context";
-import { Plus, FileText, User, Eye, MessageSquare, Settings } from "lucide-react";
+import { Plus, FileText as FileTextIcon, User as UserIcon, Eye as EyeIcon, MessageSquare as MessageSquareIcon, Settings as SettingsIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import {
@@ -82,7 +82,7 @@ const AdminDashboard = () => {
               <CardTitle className="text-sm font-medium">
                 Total Posts
               </CardTitle>
-              <FileText className="h-4 w-4 text-muted-foreground" />
+              <FileTextIcon className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{posts.length}</div>
@@ -96,7 +96,7 @@ const AdminDashboard = () => {
               <CardTitle className="text-sm font-medium">
                 Page Views
               </CardTitle>
-              <Eye className="h-4 w-4 text-muted-foreground" />
+              <EyeIcon className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">24,589</div>
@@ -110,7 +110,7 @@ const AdminDashboard = () => {
               <CardTitle className="text-sm font-medium">
                 Users
               </CardTitle>
-              <User className="h-4 w-4 text-muted-foreground" />
+              <UserIcon className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{users.length}</div>
@@ -124,7 +124,7 @@ const AdminDashboard = () => {
               <CardTitle className="text-sm font-medium">
                 Comments
               </CardTitle>
-              <MessageSquare className="h-4 w-4 text-muted-foreground" />
+              <MessageSquareIcon className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">127</div>
@@ -266,19 +266,19 @@ const AdminDashboard = () => {
               </Button>
               <Button variant="outline" asChild className="w-full justify-start">
                 <Link to="/admin/users">
-                  <User className="mr-2 h-4 w-4" />
+                  <UserIcon className="mr-2 h-4 w-4" />
                   Manage users
                 </Link>
               </Button>
               <Button variant="outline" asChild className="w-full justify-start">
                 <Link to="/admin/posts">
-                  <FileText className="mr-2 h-4 w-4" />
+                  <FileTextIcon className="mr-2 h-4 w-4" />
                   View all posts
                 </Link>
               </Button>
               <Button variant="outline" asChild className="w-full justify-start">
                 <Link to="/admin/settings">
-                  <Settings className="mr-2 h-4 w-4" />
+                  <SettingsIcon className="mr-2 h-4 w-4" />
                   Blog settings
                 </Link>
               </Button>
