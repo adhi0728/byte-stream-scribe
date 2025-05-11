@@ -125,10 +125,8 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     </DropdownMenuItem>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem>
-                      <div className="flex items-center w-full">
-                        <LogOut className="mr-2 h-4 w-4" />
-                        Log out
-                      </div>
+                      <LogOut className="mr-2 h-4 w-4" />
+                      Log out
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
