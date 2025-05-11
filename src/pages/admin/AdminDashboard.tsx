@@ -82,12 +82,10 @@ const AdminDashboard = () => {
               Welcome to your blog administration dashboard.
             </p>
           </div>
-          <Button asChild>
-            <Link to="/admin/posts/new">
-              <div className="flex items-center">
-                <Plus className="mr-2 h-4 w-4" /> 
-                <span>New Post</span>
-              </div>
+          <Button>
+            <Link to="/admin/posts/new" className="flex items-center">
+              <Plus className="mr-2 h-4 w-4" /> 
+              <span>New Post</span>
             </Link>
           </Button>
         </div>
@@ -274,36 +272,28 @@ const AdminDashboard = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
-              <Button asChild className="w-full justify-start">
-                <Link to="/admin/posts/new">
-                  <div className="flex items-center">
-                    <Plus className="mr-2 h-4 w-4" />
-                    <span>Create new post</span>
-                  </div>
+              <Button className="w-full justify-start">
+                <Link to="/admin/posts/new" className="flex items-center w-full">
+                  <Plus className="mr-2 h-4 w-4" />
+                  <span>Create new post</span>
                 </Link>
               </Button>
-              <Button variant="outline" asChild className="w-full justify-start">
-                <Link to="/admin/users">
-                  <div className="flex items-center">
-                    <UserIcon className="mr-2 h-4 w-4" />
-                    <span>Manage users</span>
-                  </div>
+              <Button variant="outline" className="w-full justify-start">
+                <Link to="/admin/users" className="flex items-center w-full">
+                  <UserIcon className="mr-2 h-4 w-4" />
+                  <span>Manage users</span>
                 </Link>
               </Button>
-              <Button variant="outline" asChild className="w-full justify-start">
-                <Link to="/admin/posts">
-                  <div className="flex items-center">
-                    <FileTextIcon className="mr-2 h-4 w-4" />
-                    <span>View all posts</span>
-                  </div>
+              <Button variant="outline" className="w-full justify-start">
+                <Link to="/admin/posts" className="flex items-center w-full">
+                  <FileTextIcon className="mr-2 h-4 w-4" />
+                  <span>View all posts</span>
                 </Link>
               </Button>
-              <Button variant="outline" asChild className="w-full justify-start">
-                <Link to="/admin/settings">
-                  <div className="flex items-center">
-                    <SettingsIcon className="mr-2 h-4 w-4" />
-                    <span>Blog settings</span>
-                  </div>
+              <Button variant="outline" className="w-full justify-start">
+                <Link to="/admin/settings" className="flex items-center w-full">
+                  <SettingsIcon className="mr-2 h-4 w-4" />
+                  <span>Blog settings</span>
                 </Link>
               </Button>
             </CardContent>
