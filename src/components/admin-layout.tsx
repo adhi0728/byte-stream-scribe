@@ -138,9 +138,7 @@ export function AdminLayout({ children }: AdminLayoutProps) {
               <div className="flex-1" />
               <ThemeToggle />
               <Button asChild variant="ghost">
-                <Link to="/">
-                  View Blog
-                </Link>
+                <Link to="/">View Blog</Link>
               </Button>
             </header>
             <main className="flex-1 overflow-auto">

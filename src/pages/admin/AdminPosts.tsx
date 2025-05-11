@@ -133,7 +133,8 @@ const AdminPosts = () => {
           </div>
           <Button asChild>
             <Link to="/admin/posts/new">
-              <Plus className="mr-2 h-4 w-4" /> New Post
+              <Plus className="mr-2 h-4 w-4" />
+              New Post
             </Link>
           </Button>
         </div>
@@ -278,7 +279,6 @@ const AdminPosts = () => {
                         >
                           <Link to={`/blog/${post.id}`}>
                             <Eye className="h-4 w-4" />
-                            <span className="sr-only">View</span>
                           </Link>
                         </Button>
                         <Button 
@@ -288,14 +288,12 @@ const AdminPosts = () => {
                         >
                           <Link to={`/admin/posts/edit/${post.id}`}>
                             <Edit className="h-4 w-4" />
-                            <span className="sr-only">Edit</span>
                           </Link>
                         </Button>
                         <DropdownMenu>
                           <DropdownMenuTrigger asChild>
                             <Button variant="ghost" size="icon">
                               <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">More</span>
                             </Button>
                           </DropdownMenuTrigger>
                           <DropdownMenuContent align="end">

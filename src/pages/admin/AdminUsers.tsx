@@ -133,7 +133,8 @@ const AdminUsers = () => {
             </p>
           </div>
           <Button>
-            <Plus className="mr-2 h-4 w-4" /> Add User
+            <Plus className="mr-2 h-4 w-4" />
+            Add User
           </Button>
         </div>
         
@@ -253,13 +254,11 @@ const AdminUsers = () => {
                           onClick={() => toast.success(`Editing ${user.name}`)}
                         >
                           <Edit className="h-4 w-4" />
-                          <span className="sr-only">Edit</span>
                         </Button>
                         <DropdownMenu>
                           <DropdownMenuTrigger asChild>
                             <Button variant="ghost" size="icon">
                               <MoreHorizontal className="h-4 w-4" />
-                              <span className="sr-only">More</span>
                             </Button>
                           </DropdownMenuTrigger>
                           <DropdownMenuContent align="end">
