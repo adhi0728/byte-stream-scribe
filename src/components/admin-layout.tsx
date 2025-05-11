@@ -9,6 +9,7 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
+  SidebarMenuButton,
   SidebarTrigger,
   SidebarProvider 
 } from "@/components/ui/sidebar";
