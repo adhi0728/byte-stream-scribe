@@ -14,30 +14,30 @@ const QuickActions = () => {
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-2">
-        <Button className="w-full justify-start">
-          <Link to="/admin/posts/new" className="flex items-center w-full">
+        <Link to="/admin/posts/new" className="block w-full">
+          <Button className="w-full justify-start flex items-center">
             <Plus className="mr-2 h-4 w-4" />
             <span>Create new post</span>
-          </Link>
-        </Button>
-        <Button variant="outline" className="w-full justify-start">
-          <Link to="/admin/users" className="flex items-center w-full">
+          </Button>
+        </Link>
+        <Link to="/admin/users" className="block w-full">
+          <Button variant="outline" className="w-full justify-start flex items-center">
             <User className="mr-2 h-4 w-4" />
             <span>Manage users</span>
-          </Link>
-        </Button>
-        <Button variant="outline" className="w-full justify-start">
-          <Link to="/admin/posts" className="flex items-center w-full">
+          </Button>
+        </Link>
+        <Link to="/admin/posts" className="block w-full">
+          <Button variant="outline" className="w-full justify-start flex items-center">
             <FileText className="mr-2 h-4 w-4" />
             <span>View all posts</span>
-          </Link>
-        </Button>
-        <Button variant="outline" className="w-full justify-start">
-          <Link to="/admin/settings" className="flex items-center w-full">
+          </Button>
+        </Link>
+        <Link to="/admin/settings" className="block w-full">
+          <Button variant="outline" className="w-full justify-start flex items-center">
             <Settings className="mr-2 h-4 w-4" />
             <span>Blog settings</span>
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   );

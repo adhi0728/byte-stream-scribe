@@ -1,6 +1,20 @@
 
 import { createContext, useContext, ReactNode } from "react";
-import { blogPosts, sampleUsers, BlogPost } from "@/data/blog-data";
+import { blogPosts, sampleUsers } from "@/data/blog-data";
+
+// Export the BlogPost type so it can be used in other components
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  publishedAt: string;
+  category: string;
+  tags: string[];
+  coverImage: string;
+  featured: boolean;
+}
 
 interface BlogContextType {
   posts: BlogPost[];
