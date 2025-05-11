@@ -13,11 +13,9 @@ const DashboardHeader = () => {
         </p>
       </div>
       <Button asChild>
-        <Link to="/admin/posts/new">
-          <div className="flex items-center">
-            <Plus className="mr-2 h-4 w-4" />
-            <span>New Post</span>
-          </div>
+        <Link to="/admin/posts/new" className="flex items-center">
+          <Plus className="mr-2 h-4 w-4" />
+          <span>New Post</span>
         </Link>
       </Button>
     </div>

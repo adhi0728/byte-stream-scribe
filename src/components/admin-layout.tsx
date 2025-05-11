@@ -59,11 +59,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin")}
                   >
-                    <Link to="/admin">
-                      <div className="flex items-center gap-2">
-                        <Home className="h-4 w-4" />
-                        <span>Dashboard</span>
-                      </div>
+                    <Link to="/admin" className="flex items-center gap-2">
+                      <Home className="h-4 w-4" />
+                      <span>Dashboard</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -72,11 +70,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin/posts")}
                   >
-                    <Link to="/admin/posts">
-                      <div className="flex items-center gap-2">
-                        <FileText className="h-4 w-4" />
-                        <span>Posts</span>
-                      </div>
+                    <Link to="/admin/posts" className="flex items-center gap-2">
+                      <FileText className="h-4 w-4" />
+                      <span>Posts</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -85,11 +81,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin/users")}
                   >
-                    <Link to="/admin/users">
-                      <div className="flex items-center gap-2">
-                        <User className="h-4 w-4" />
-                        <span>Users</span>
-                      </div>
+                    <Link to="/admin/users" className="flex items-center gap-2">
+                      <User className="h-4 w-4" />
+                      <span>Users</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -98,11 +92,9 @@ export function AdminLayout({ children }: AdminLayoutProps) {
                     asChild
                     isActive={isActivePath("/admin/settings")}
                   >
-                    <Link to="/admin/settings">
-                      <div className="flex items-center gap-2">
-                        <Settings className="h-4 w-4" />
-                        <span>Settings</span>
-                      </div>
+                    <Link to="/admin/settings" className="flex items-center gap-2">
+                      <Settings className="h-4 w-4" />
+                      <span>Settings</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -145,14 +137,13 @@ export function AdminLayout({ children }: AdminLayoutProps) {
               <SidebarTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle Sidebar</span>
                 </Button>
               </SidebarTrigger>
               <div className="flex-1" />
               <ThemeToggle />
               <Button asChild variant="ghost">
-                <Link to="/">
-                  <div>View Blog</div>
+                <Link to="/" className="flex items-center">
+                  View Blog
                 </Link>
               </Button>
             </header>
